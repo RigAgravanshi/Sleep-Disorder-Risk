@@ -1,55 +1,29 @@
-# Sleep-Disorder-Risk
-This is a simple project where we assess the risk of Sleep Disorder in a person based on the following paramenters:
+# Sleep Disorder Risk Predictor 💤
 
-Gender:
-The gender of the individual (e.g., Male, Female, Other).
+This is a simple **Sleep Disorder Risk Assessment Model** that predicts the likelihood of sleep disorders (None, Insomnia, Sleep Apnea) with a **91% accuracy**. 
 
+## Features ✨
+- **Input Parameters**: Collects user data on:
+  - Gender, Age, Sleep Duration (hours), Quality of Sleep (1–10)
+  - Physical Activity Level (minutes/day), Stress Level (1–10)
+  - BMI Category, Blood Pressure, Heart Rate (bpm), Daily Steps
+- **Prediction**: Classifies risk of sleep disorders (None, Insomnia, Sleep Apnea)
+- **Performance**: Achieves **91% accuracy** and **0.91 F1-score** using XGBoost
+- **Interactive UI**: Deployed as a user-friendly web app via Streamlit Community Cloud
 
+## Tech Stack 🛠️
+- **Jupyter Notebook**: For model development and experimentation
+- **Python Libraries**:
+  - `pandas` & `numpy`: Data processing and manipulation
+  - `scikit-learn`: Machine learning utilities and preprocessing
+  - `xgboost`: Final model  
+  - `pickle`: Serialization of the trained model
+- **Streamlit**: Web app deployment for user input and predictions
 
-Age:
-The age of the individual in years.
-
-
-
-Sleep Duration (hours):
-The total number of hours an individual sleeps per day.
-
-
-
-Quality of Sleep (scale: 1–10):
-A subjective rating of sleep quality, ranging from 1 (poor) to 10 (excellent).
-
-
-
-Physical Activity Level (minutes/day):
-The number of minutes an individual engages in physical activity each day.
-
-
-
-Stress Level (scale: 1–10):
-A subjective rating of the stress level experienced by the individual, ranging from 1 (low stress) to 10 (high stress).
-
-
-
-BMI Category:
-The Body Mass Index (BMI) category of the individual, classified as Underweight, Normal, or Overweight.
-
-
-
-Blood Pressure (systolic/diastolic):
-The blood pressure measurement, expressed as systolic pressure over diastolic pressure (e.g., 120/80 mmHg).
-
-
-
-Heart Rate (bpm):
-The resting heart rate of the individual, measured in beats per minute (bpm).
-
-
-
-Daily Steps:
-The total number of steps taken by the individual per day.
-
-
-
-Sleep Disorder:
-Indicates the presence or absence of a sleep disorder, categorized as None, Insomnia, or Sleep Apnea.
+## Project Structure 📂
+- `sleeper.py`: Main Streamlit app script
+- `sleep.pkl`: Trained XGBoost model
+- `scaler.pkl`: Standard scaler, which was fit on the Test data
+- `requirements.txt`: Python dependencies
+- `Sleep_Disorder_Risk.ipynb`: Jupyter notebook
+- `Sleep_health_and_lifestyle_dataset.csv`: Input dataset used to train the model
