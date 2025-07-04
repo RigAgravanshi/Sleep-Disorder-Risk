@@ -2,6 +2,8 @@
 
 This is a simple **Sleep Disorder Risk Assessment Model** that predicts the likelihood of sleep disorders (None, Insomnia, Sleep Apnea) with a **91% accuracy**. 
 
+Check it out here: https://sleep-disorder-risk-ipv.streamlit.app/
+
 ## Features ✨
 - **Input Parameters**: Collects user data on:
   - Gender, Age, Sleep Duration (hours), Quality of Sleep (1–10)
